@@ -8,11 +8,12 @@ from common.class_loader.module_installer import default_blender_addon_path, nor
 
 # The name of current active addon to be created, tested or released
 # 要创建、测试或发布的当前活动插件的名称
-ACTIVE_ADDON = "simple"
+ACTIVE_ADDON = "sample_addon"
 
 # The path of the blender executable. Blender2.93 is the minimum version required
 # Blender可执行文件的路径，Blender2.93是所需的最低版本
-BLENDER_EXE_PATH = r"C:\Program Files\Blender Foundation\Blender 4.4\blender.exe"
+BLENDER_EXE_PATH = "C:/software/general/Blender/blender-3.6.0-windows-x64/blender.exe"
+
 # Linux example Linux示例
 # BLENDER_EXE_PATH = "/usr/local/blender/blender-3.6.0-linux-x64/blender"
 
