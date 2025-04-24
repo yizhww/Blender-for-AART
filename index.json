@@ -1,5 +1,28 @@
 {
   "version": "v1",
   "blocklist": [],
-  "data": []
+  "data": [
+    {
+      "schema_version": "1.0.0",
+      "id": "MergeObjectsByMaterial",
+      "name": "MergeObjectsByMaterial",
+      "tagline": "A brief description of your plugin",
+      "version": "1.0.0",
+      "type": "add-on",
+      "maintainer": "Your Name <your@email.com>",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "4.2.0",
+      "blender_version_max": "4.7.0",
+      "website": "https://github.com/your/repo",
+      "tags": [
+        "3D View",
+        "Modeling"
+      ],
+      "archive_url": "./MergeObjectsByMaterial.zip",
+      "archive_size": 4597,
+      "archive_hash": "sha256:aa4232178cf0382cf8febd0d102a33b379a45d6be2f90f418e17fe9ecfcb472f"
+    }
+  ]
 }

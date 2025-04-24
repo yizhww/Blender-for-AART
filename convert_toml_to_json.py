@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 # 定义扩展根目录（包含多个扩展子目录）
-EXTENSIONS_DIR = Path("path/to/your/extensions")
+EXTENSIONS_DIR = Path("D:\ART实验库\gittest\Blender-for-AART\my extension")
 # 生成的 JSON 清单路径
 INDEX_JSON_PATH = Path("index.json")
 
