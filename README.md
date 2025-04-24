@@ -1,5 +1,5 @@
 # Blender-for-AART 
-![Blender-for-AART ][aartlogo.png](aartlogo.png)
+![Blender-for-AART ](aartlogo.png)
 ___
 ### 项目名称与简介
 以艺术平台为媒介，基于公共艺术领域视角的视觉工作流自动化研发工作
