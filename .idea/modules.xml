@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BlenderAddonPackageTool.iml" filepath="$PROJECT_DIR$/.idea/BlenderAddonPackageTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Blender-for-AART.iml" filepath="$PROJECT_DIR$/.idea/Blender-for-AART.iml" />
     </modules>
   </component>
 </project>
