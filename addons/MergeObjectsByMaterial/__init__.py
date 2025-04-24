@@ -2,7 +2,7 @@ import bpy
 
 # 定义插件的元信息，用于在 Blender 的插件管理界面中显示相关信息
 bl_info = {
-    "name": "MergeObjectsByMaterial",  # 插件名称
+    "name": "MergeObjectsByMaterial",  # 插件名称。
     "author": "[You name]",  # 插件作者
     "blender": (3, 5, 0),  # 支持的 Blender 最低版本
     "version": (0, 0, 1),  # 插件版本号
