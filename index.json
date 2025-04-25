@@ -11,7 +11,8 @@
       "type": "add-on",
       "maintainer": "yizhww <yzh_1234@qq.com>",
       "license": [
-        "SPDX:GPL-3.0-or-later"
+        "SPDX:MIT",
+        "SPDX:GPL - 2.0 - only"
       ],
       "blender_version_min": "4.2.0",
       "blender_version_max": "4.7.0",
