@@ -40,7 +40,7 @@ def convert_toml_to_json():
             "version": tomd["version"],
             "type": tomd["type"],
             "maintainer": tomd["maintainer"],
-            "license": [f"SPDX:{tomd['license']}"],
+            "license": tomd["license"],
             "blender_version_min": tomd["blender_version_min"],
             "blender_version_max": tomd.get("blender_version_max", ""),
             "website": tomd.get("website", ""),
