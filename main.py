@@ -20,10 +20,10 @@ BLENDER_EXE_PATH = r"C:\Program Files\Blender Foundation\Blender 4.4\blender.exe
 # MacOS示例 框架会自动附加"/Contents/MacOS/Blender" 所以您不必写出
 # BLENDER_EXE_PATH = "/Applications/Blender/blender-3.6.0-macOS/Blender.app"
 
-# Are you developing an extension(for Blender4.2) instead of legacy addon?
+# Are you developing an extensions(for Blender4.2) instead of legacy addon?
 # https://docs.blender.org/manual/en/latest/advanced/extensions/addons.html
-# The framework will convert absolute import to relative import when packaging the extension.
-# Make sure to update __addon_name__ in config.py if you are migrating from legacy addon to extension.
+# The framework will convert absolute import to relative import when packaging the extensions.
+# Make sure to update __addon_name__ in config.py if you are migrating from legacy addon to extensions.
 # 是否是面向Blender4.2以后的扩展而不是传统插件？
 # https://docs.blender.org/manual/en/latest/advanced/extensions/addons.html
 # 在打包扩展时，框架会将绝对导入转换为相对导入。如果你从传统插件迁移到扩展，请确保更新config.py中的__addon_name__

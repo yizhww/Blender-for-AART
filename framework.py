@@ -205,7 +205,7 @@ def release_addon(target_init_file, addon_name,
 
     if is_extension:
         # 发布为扩展时，请确保您在config.py正确的定义了__addon_name__
-        # Release as extension, please make sure you defined __addon_name__ correctly in config.py"
+        # Release as extensions, please make sure you defined __addon_name__ correctly in config.py"
         # Make sure toml file exists
         addon_config_file = os.path.join(_ADDON_ROOT, addon_name, _ADDON_MANIFEST_FILE)
         if not os.path.isfile(addon_config_file):
@@ -261,7 +261,7 @@ def release_addon(target_init_file, addon_name,
         removed_path = remove_empty_folders(release_folder)
 
     # 必须先将绝对导入转换为相对导入，否则enhance_import_for_py_files一步会改变绝对导入的路径导致出错
-    # convert absolute import to relative import if it's an extension
+    # convert absolute import to relative import if it's an extensions
     if is_extension:
         for py_file in search_files(release_folder, {".py"}):
             convert_absolute_to_relative(py_file, release_folder)
@@ -279,7 +279,7 @@ def release_addon(target_init_file, addon_name,
     if os.path.exists(addon_config_file) and is_extension:
         addon_config = read_ext_config(addon_config_file)
     if need_zip:
-        # package whl files into extension
+        # package whl files into extensions
         if "wheels" in addon_config:
             wheel_files = addon_config["wheels"]
             if len(wheel_files) > 0:

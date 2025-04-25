@@ -13,12 +13,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('addon', default=ACTIVE_ADDON, nargs='?', help='addon name')
     parser.add_argument('--is_extension', default=IS_EXTENSION, action='store_true', help='If true, package the addon '
-                                                                                          'as extension, framework '
+                                                                                          'as extensions, framework '
                                                                                           'will convert absolute '
                                                                                           'import to relative import '
                                                                                           'for you and will take care '
                                                                                           'of packaging the '
-                                                                                          'extension. Default is the '
+                                                                                          'extensions. Default is the '
                                                                                           'value of IS_EXTENSION')
     parser.add_argument('--disable_zip', default=False, action='store_true', help='If true, release the addon into a '
                                                                                   'plain folder and do not zip it '

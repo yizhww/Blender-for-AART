@@ -4,11 +4,28 @@ import json
 import hashlib
 from pathlib import Path
 
-
 # 定义扩展根目录（包含多个扩展子目录）
-EXTENSIONS_DIR = Path("D:\ART实验库\gittest\Blender-for-AART\my extension")
+EXTENSIONS_DIR = Path("/extensions")
 # 生成的 JSON 清单路径
 INDEX_JSON_PATH = Path("index.json")
+
+# 示例：检查目录是否存在
+from pathlib import Path
+
+EXTENSIONS_DIR = Path("D:/ART实验库/gittest/Blender-for-AART/extensions")
+if not os.path.exists(EXTENSIONS_DIR):
+    print(f"{EXTENSIONS_DIR} 目录不存在，请检查路径设置！")
+    exit(1)
+
+# 示例：检查子目录中是否有TOML文件
+for ext_dir in EXTENSIONS_DIR.glob("*"):
+    # 跳过以 __ 开头的目录（如 __init__.py 目录）
+    if ext_dir.name.startswith("__"):
+        continue
+    toml_file = ext_dir / "blender_manifest.toml"
+    if not toml_file.exists():
+        print(f"{ext_dir} 目录中没有 blender_manifest.toml 文件！")
+        continue
 
 
 def convert_toml_to_json():
@@ -18,8 +35,12 @@ def convert_toml_to_json():
         if not toml_file.exists():
             continue  # 跳过无 TOML 文件的目录
 
-        # 读取 TOML 元数据
-        tomd = toml.load(toml_file)
+        try:
+            # 读取 TOML 元数据
+            tomd = toml.load(toml_file)
+        except Exception as e:
+            print(f"加载 {toml_file} 文件时出现异常：{e}")
+            continue
 
         # 获取 ZIP 文件信息（假设 ZIP 与 TOML 同名）
         zip_path = ext_dir / f"{tomd['id']}.zip"
@@ -45,7 +66,7 @@ def convert_toml_to_json():
             "blender_version_max": tomd.get("blender_version_max", ""),
             "website": tomd.get("website", ""),
             "tags": tomd.get("tags", []),
-            "archive_url": f"./my%20extension/{tomd['id']}/{tomd['id']}.zip",
+            "archive_url": f"./extensions/{tomd['id']}/{tomd['id']}.zip",
             "archive_size": zip_size,
             "archive_hash": f"sha256:{zip_hash}"
         }
