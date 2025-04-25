@@ -4,12 +4,12 @@ id = "MergeObjectsByMaterial"      # 唯一标识符（必填，需与目录名�
 name = "MergeObjectsByMaterial"  # 扩展名称（必填）
 version = "1.0.0"          # 版本号（必填，语义化版本）
 type = "add-on"            # 类型（必填，固定为 "add-on"）
-maintainer = "Your Name <your@email.com>"  # 维护者信息（必填）
+maintainer = "yizhww <yzh_1234@qq.com>"  # 维护者信息（必填）
 blender_version_min = "4.2.0"  # 最低兼容版本（必填）
 blender_version_max = "4.7.0"  # 最高兼容版本（可选，建议填写）
 license = "GPL-3.0-or-later"  # 许可证（必填，建议使用 SPDX 格式）
-tagline = "A brief description of your plugin"  # 功能标语（可选）
-website = "https://github.com/your/repo"       # 项目地址（可选）
+tagline = "以艺术平台为媒介，基于公共艺术领域视角的视觉工作流自动化研发工作"  # 功能标语（可选）
+website = "https://github.com/yizhww/Blender-for-AART"       # 项目地址（可选）
 tags = ["3D View", "Modeling"]                 # 功能标签（可选，数组）
 
 # 构建配置（可选，用于指定打包规则）
