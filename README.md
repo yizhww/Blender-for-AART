@@ -1,4 +1,4 @@
-![Blender-for-AART ](img.png)
+
 <p align="center">
 以艺术平台为媒介，基于公共艺术领域视角的视觉工作流自动化研发工作
 
@@ -8,7 +8,7 @@ ___
 ### 功能特性
 ___
 #### 资源储备
-· [艺术中心飞书知识库](https://lcnz16b10gl2.feishu.cn/wiki/Vgy5wDCPjixUwRk3SMNc3fEonPc?from=from_copylink)
+
 
 ___
 ### 技术栈
