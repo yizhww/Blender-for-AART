@@ -21,7 +21,7 @@
         "3D View",
         "Modeling"
       ],
-      "archive_url": "./addon_release/MergeObjectsByMaterial/MergeObjectsByMaterial.zip",
+      "archive_url": "./addon_release/merge_addon/merge_addon.zip",
       "archive_size": 14177,
       "archive_hash": "sha256:8768555746c23ec727e2b5a96b29bf932f3d24fb74362c344ebfb70ec1f71e00"
     }
