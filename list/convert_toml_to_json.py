@@ -74,7 +74,7 @@ def convert_toml_to_json():
             "blender_version_max": tomd.get("blender_version_max", ""),
             "website": tomd.get("website", ""),
             "tags": tomd.get("tags", []),
-            "archive_url": f"./extensions/{tomd['id']}/{tomd['id']}.zip",
+            "archive_url": f"./addon_release/{tomd['id']}/{tomd['id']}.zip",
             "archive_size": zip_size,
             "archive_hash": f"sha256:{zip_hash}"
         }
