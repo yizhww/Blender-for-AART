@@ -4,8 +4,8 @@
   "data": [
     {
       "schema_version": "1.0.0",
-      "id": "MergeObjectsByMaterial",
-      "name": "MergeObjectsByMaterial",
+      "id": "merge_addon",
+      "name": "merge_addon",
       "tagline": "\u4ee5\u827a\u672f\u5e73\u53f0\u4e3a\u5a92\u4ecb\uff0c\u57fa\u4e8e\u516c\u5171\u827a\u672f\u9886\u57df\u89c6\u89d2\u7684\u89c6\u89c9\u5de5\u4f5c\u6d41\u81ea\u52a8\u5316\u7814\u53d1\u5de5\u4f5c",
       "version": "1.0.0",
       "type": "add-on",
@@ -23,7 +23,7 @@
       ],
       "archive_url": "./addon_release/merge_addon/merge_addon.zip",
       "archive_size": 13091,
-      "archive_hash": "sha256:8768555746c23ec727e2b5a96b29bf932f3d24fb74362c344ebfb70ec1f71e00"
+      "archive_hash": "sha256:bb6acb8e1e48f5edf3128efdfec623c3269dea64612a5e1b70fba45c9a4ae948"
     }
   ]
 }

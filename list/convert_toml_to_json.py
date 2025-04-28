@@ -5,29 +5,9 @@ import hashlib
 from pathlib import Path
 
 # 定义扩展根目录（包含多个扩展子目录）
-EXTENSIONS_DIR = Path("/addon_release")
+EXTENSIONS_DIR = Path("../addon_release")
 # 生成的 JSON 清单路径
 INDEX_JSON_PATH = Path("index.json")
-
-
-
-# 示例：检查目录是否存在
-from pathlib import Path
-
-EXTENSIONS_DIR = Path(r"C:\Users\PC\Documents\GitHub\desktop-tutorial\addon_release")
-if not os.path.exists(EXTENSIONS_DIR):
-    print(f"{EXTENSIONS_DIR} 目录不存在，请检查路径设置！")
-    exit(1)
-
-# 示例：检查子目录中是否有TOML文件
-for ext_dir in EXTENSIONS_DIR.glob("*"):
-    # 跳过以 __ 开头的目录（如 __init__.py 目录）
-    if ext_dir.name.startswith("__"):
-        continue
-    toml_file = ext_dir / "blender_manifest.toml"
-    if not toml_file.exists():
-        print(f"{ext_dir} 目录中没有 blender_manifest.toml 文件！")
-        continue
 
 
 def convert_toml_to_json():
@@ -83,15 +63,23 @@ def convert_toml_to_json():
     with open(INDEX_JSON_PATH, "w") as f:
         json.dump(final_manifest, f, indent=2)
 
+
+def move_file(source_file, target_path):
+    try:
+        # 移动文件
+        source_file.rename(target_path / source_file.name)
+        print(f"文件 {source_file.name} 已成功移动到 {target_path}")
+    except Exception as e:
+        print(f"移动文件时出现错误：{e}")
+
+
 if __name__ == "__main__":
     convert_toml_to_json()
     print(f"JSON manifest generated at {INDEX_JSON_PATH}")
 
-# 源文件路径
-source_file = Path("D:/ART实验库/gittest/Blender-for-AART/list/index.json")
-# 目标路径（最外层文件夹路径）
-target_path = Path("D:/ART实验库/gittest/Blender-for-AART")
-# 移动文件
-source_file.rename(target_path / source_file.name)
-
-
+    # 源文件路径
+    source_file = Path("D:/ART实验库/gittest/Blender-for-AART/list/index.json")
+    # 目标路径（最外层文件夹路径）
+    target_path = Path("D:/ART实验库/gittest/Blender-for-AART")
+    # 移动文件
+    move_file(source_file, target_path)
