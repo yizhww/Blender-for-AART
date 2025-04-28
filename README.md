@@ -8,10 +8,14 @@ ___
 - Set the URL to `https://yizhww.github.io/Blender-for-AART/index.json`
 - Enable `Check for Updates on Start`
 - Filter the available extensions for "AART" and install as needed
-- 前往 Blender 偏好设置 > 获取扩展 > 存储库 >＋> 添加远程存储库
-- 将网址设置为 https://yizhww.github.io/Blender-for-AART/index.json
-- 启用 “启动时检查更新” 功能
-- 筛选出与 “AART” 相关的可用扩展，并根据需要进行安装
+
+> 1.前往 Blender 偏好设置 > 获取扩展 > 存储库 >＋> 添加远程存储库
+>
+> 2.将网址设置为 https://yizhww.github.io/Blender-for-AART/index.json
+> 
+> 3.启用 “启动时检查更新” 功能
+>
+> 4.筛选出与 “AART” 相关的可用扩展，并根据需要进行安装
 ___
 ### 功能特性
 ___
