@@ -1,0 +1,29 @@
+{
+  "version": "v1",
+  "blocklist": [],
+  "data": [
+    {
+      "schema_version": "1.0.0",
+      "id": "MergeObjectsByMaterial",
+      "name": "MergeObjectsByMaterial",
+      "tagline": "\u4ee5\u827a\u672f\u5e73\u53f0\u4e3a\u5a92\u4ecb\uff0c\u57fa\u4e8e\u516c\u5171\u827a\u672f\u9886\u57df\u89c6\u89d2\u7684\u89c6\u89c9\u5de5\u4f5c\u6d41\u81ea\u52a8\u5316\u7814\u53d1\u5de5\u4f5c",
+      "version": "1.0.0",
+      "type": "add-on",
+      "maintainer": "yizhww <yzh_1234@qq.com>",
+      "license": [
+        "SPDX:MIT",
+        "SPDX:GPL - 2.0 - only"
+      ],
+      "blender_version_min": "4.2.0",
+      "blender_version_max": "4.7.0",
+      "website": "https://github.com/yizhww/Blender-for-AART",
+      "tags": [
+        "3D View",
+        "Modeling"
+      ],
+      "archive_url": "./extensions/MergeObjectsByMaterial/MergeObjectsByMaterial.zip",
+      "archive_size": 14177,
+      "archive_hash": "sha256:8768555746c23ec727e2b5a96b29bf932f3d24fb74362c344ebfb70ec1f71e00"
+    }
+  ]
+}
