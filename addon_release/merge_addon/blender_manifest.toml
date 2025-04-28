@@ -1,7 +1,7 @@
 # 扩展元数据
 schema_version = "1.0.0"    # 元数据格式版本（必填）
 id = "merge_addon"      # 唯一标识符（必填，需与目录名或 ZIP 文件名一致）
-name = "MergeObjectsByMaterial"  # 扩展名称（必填）
+name = "merge_addon"  # 扩展名称（必填）
 version = "1.0.0"          # 版本号（必填，语义化版本）
 type = "add-on"            # 类型（必填，固定为 "add-on"）
 maintainer = "yizhww <yzh_1234@qq.com>"  # 维护者信息（必填）

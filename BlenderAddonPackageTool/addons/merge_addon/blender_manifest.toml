@@ -1,74 +1,18 @@
-schema_version = "1.0.0"
+# 扩展元数据
+schema_version = "1.0.0"    # 元数据格式版本（必填）
+id = "merge_addon"      # 唯一标识符（必填，需与目录名或 ZIP 文件名一致）
+name = "merge_addon"  # 扩展名称（必填）
+version = "1.0.0"          # 版本号（必填，语义化版本）
+type = "add-on"            # 类型（必填，固定为 "add-on"）
+maintainer = "yizhww <yzh_1234@qq.com>"  # 维护者信息（必填）
+blender_version_min = "4.2.0"  # 最低兼容版本（必填）
+blender_version_max = "4.7.0"  # 最高兼容版本（可选，建议填写）
+license = ["SPDX:MIT", "SPDX:GPL - 2.0 - only"]  # 许可证（必填，建议使用 SPDX 格式）
+tagline = "以艺术平台为媒介，基于公共艺术领域视角的视觉工作流自动化研发工作"  # 功能标语（可选）
+website = "https://github.com/yizhww/Blender-for-AART"       # 项目地址（可选）
+tags = ["3D View", "Modeling"]                 # 功能标签（可选，数组）
 
-# Example of manifest file for a Blender extension
-# Change the values according to your extension
-# id must be the same as the directory name, and must be unique
-id = "merge_addon"
-version = "0.0.1"
-name = "Basic Add-on Sample"
-tagline = "This is another extension"
-maintainer = "Developer name <email@address.com>"
-# Supported types: "add-on", "theme"
-type = "add-on"
-
-# Optional link to documentation, support, source files, etc
-# website = "https://extensions.blender.org/add-ons/my-example-package/"
-
-# Optional list defined by Blender and server, see:
-# https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html
-tags = ["Animation", "Sequencer"]
-
-blender_version_min = "4.2.0"
-# # Optional: Blender version that the extension does not support, earlier versions are supported.
-# # This can be omitted and defined later on the extensions platform if an issue is found.
-# blender_version_max = "5.1.0"
-
-# License conforming to https://spdx.org/licenses/ (use "SPDX: prefix)
-# https://docs.blender.org/manual/en/dev/advanced/extensions/licenses.html
-license = [
-    "SPDX:GPL-3.0-or-later",
-]
-# Optional: required by some licenses.
-# copyright = [
-#   "2002-2024 Developer Name",
-#   "1998 Company Name",
-# ]
-
-# Optional list of supported platforms. If omitted, the extension will be available in all operating systems.
-# platforms = ["windows-x64", "macos-arm64", "linux-x64"]
-# Other supported platforms: "windows-arm64", "macos-x64"
-
-# Optional: bundle 3rd party Python modules.
-# https://docs.blender.org/manual/en/dev/advanced/extensions/python_wheels.html
-# wheels = [
-#   "./wheels/hexdump-3.3-py3-none-any.whl",
-#   "./wheels/jsmin-3.0.1-py3-none-any.whl",
-# ]
-
-# # Optional: add-ons can list which resources they will require:
-# # * files (for access of any filesystem operations)
-# # * network (for internet access)
-# # * clipboard (to read and/or write the system clipboard)
-# # * camera (to capture photos and videos)
-# # * microphone (to capture audio)
-# #
-# # If using network, remember to also check `bpy.app.online_access`
-# # https://docs.blender.org/manual/en/dev/advanced/extensions/addons.html#internet-access
-# #
-# # For each permission it is important to also specify the reason why it is required.
-# # Keep this a single short sentence without a period (.) at the end.
-# # For longer explanations use the documentation or detail page.
-#
-# [permissions]
-# network = "Need to sync motion-capture data to server"
-# files = "Import/export FBX from/to disk"
-# clipboard = "Copy and paste bone transforms"
-
-# Optional: build settings.
-# https://docs.blender.org/manual/en/dev/advanced/extensions/command_line_arguments.html#command-line-args-extension-build
-# [build]
-# paths_exclude_pattern = [
-#   "__pycache__/",
-#   "/.git/",
-#   "/*.zip",
-# ]
+# 构建配置（可选，用于指定打包规则）
+[build]
+paths = ["__init__.py", "operators/", "utils/"]  # 包含的文件/目录
+paths_exclude_pattern = ["*.md", "tests/"]       # 排除的文件模式

@@ -8,7 +8,7 @@ from ..preference.AddonPreferences import ExampleAddonPreferences
 class MergeObjectsByMaterialOperator(bpy.types.Operator):
     '''按材质合并网格物体'''
     bl_idname = "object.merge_operator"
-    bl_label = "MergeObjectsByMaterial"
+    bl_label = "merge_addon"
 
     # 确保在操作之前备份数据，用户撤销操作时可以恢复
     bl_options = {'REGISTER', 'UNDO'}

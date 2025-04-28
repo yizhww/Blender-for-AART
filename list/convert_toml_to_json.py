@@ -9,12 +9,6 @@ EXTENSIONS_DIR = Path("/addon_release")
 # 生成的 JSON 清单路径
 INDEX_JSON_PATH = Path("index.json")
 
-# 源文件路径
-source_file = Path("D:/ART实验库/gittest/Blender-for-AART/list/index.json")
-# 目标路径（最外层文件夹路径）
-target_path = Path("D:/ART实验库/gittest/Blender-for-AART")
-# 移动文件
-source_file.rename(target_path / source_file.name)
 
 
 # 示例：检查目录是否存在
@@ -89,7 +83,15 @@ def convert_toml_to_json():
     with open(INDEX_JSON_PATH, "w") as f:
         json.dump(final_manifest, f, indent=2)
 
-
 if __name__ == "__main__":
     convert_toml_to_json()
     print(f"JSON manifest generated at {INDEX_JSON_PATH}")
+
+# 源文件路径
+source_file = Path("D:/ART实验库/gittest/Blender-for-AART/list/index.json")
+# 目标路径（最外层文件夹路径）
+target_path = Path("D:/ART实验库/gittest/Blender-for-AART")
+# 移动文件
+source_file.rename(target_path / source_file.name)
+
+
