@@ -18,6 +18,10 @@ ___
 > 4.筛选出与 “AART” 相关的可用扩展，并根据需要进行安装
 ___
 ### 功能特性
+- MergeObjectsByMaterialOperator
+> 选中对象，将材质相同的对象进行合并
+- ClearParentKeepTransform
+> 选中对象，清空对象的父子级关系并且应用对象当前的变换数据
 ___
 #### 资源储备
 - [飞书知识库](https://lcnz16b10gl2.feishu.cn/wiki/Vgy5wDCPjixUwRk3SMNc3fEonPc)
@@ -31,3 +35,4 @@ ___
 - pycharm
 #### 项目管理类
 - feishu
+- AAAAA
